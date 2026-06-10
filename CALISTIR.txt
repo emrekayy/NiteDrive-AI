@@ -1,0 +1,39 @@
+UYKU TESPİTİ — HIZLI BAŞLANGIÇ
+================================
+
+1) Terminalde proje klasörüne girin:
+   cd ~/Desktop/drowsiness_project
+
+2) Çalıştırın (kamera sorar — PC veya Phone):
+   ./run.sh
+
+   Telefon (indeks 2):
+   ./run.sh phone
+
+   Elle kamera indeksi:
+   ./run.sh camera=1
+
+   İlk seferde izin gerekebilir:
+   chmod +x run.sh
+
+3) Pencere açılınca yüzünüzü kameraya gösterin.
+   Çıkmak: klavyede 'q'
+
+4) Arduino USB takılı olmalı (yeşil/kırmızı LED + buzzer).
+
+---
+Diğer komutlar
+  ./run.sh --check     → sadece kamera/Arduino kontrolü
+  ./run.sh --test      → 5 kare otomatik test (pencere yok)
+  ./run.sh phone       → telefon webcam (Photo Booth'ta görünüyorsa)
+  ./run.sh camera=1    → belirli OpenCV kamera indeksi
+
+Telefon kamerası çalışmıyorsa
+  • Normal USB şarj yetmez; Continuity Camera / DroidCam / Camo gerekir.
+  • Photo Booth'ta ikinci kamera yoksa ./run.sh phone da çalışmaz.
+  • Şimdilik: ./run.sh  (PC kamerası)
+
+Sorun giderme
+  • venv: source venv310/bin/activate
+  • Arduino portu: ls /dev/cu.usbserial*
+  • Elle port: DROWSINESS_SERIAL_PORT=/dev/cu.usbserial-10 ./run.sh

@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+venv310/
+env/
+ENV/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Live runtime state (local only)
+.nitedrive_live.json
+.nitedrive_live.jpg
+.nitedrive_live_*.jpg
+.phone_camera_index
+
+# Large media / video production
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.aiff
+*.m4a
+*.zip
+*.rar
+video_frames/
+video_scene_analysis/
+final_video_work/
+synced_voice_edit_work/
+user_voice_fit_work/
+text_check_frames/
+full_text_scan_frames/
+voice_samples/
+camera_debug/
+
+# Large datasets and trained models
+*.pkl
+data.csv
+clean_data.csv
+clean_data_v2.csv
+final_data.csv
+new_data.csv
+kaggle_features.csv
+kaggle_data/
+
+# Video / demo production scripts (local only)
+render_final_demo_video.py
+render_nitedrive_demo_video.py
+final_editing_notes.md
+final_subtitles.srt
+final_video_script.txt
+video_script.txt
+video_sections.txt
+subtitles.srt
+shot_list.md
+recording_notes.txt
+
+# Duplicate Arduino firmware path (canonical: arduino/nitedrive_alert_system.ino)
+arduino_firmware/
+
+# Legacy / duplicate entry points
+nitedrive_dashboard.py
+nitedrive_overview.py
+ai_live.py
+ear.py
+main.py
+face_eye.py
+merge_data.py
+clean_data.py
+
+# Logs and caches
+*.log
+.cache/
+.ipynb_checkpoints/
+node_modules/
+dist/
+build/
+
+# Personal / local award source (canonical copy is assets/birincilik_resmi.png)
+1.lik resmi .PNG
